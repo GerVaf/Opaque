@@ -89,7 +89,7 @@ const Tour = () => {
     },
   ];
   return (
-    <div className=" lg:pr-20">
+    <div className=" ">
       <h1 className="lg:text-[100px] text-6xl font-extrabold text-white opacity-20">
         TOUR DATES
       </h1>
@@ -100,7 +100,7 @@ const Tour = () => {
               <div className="border rounded-sm p-5 lg:h-60 flex flex-col gap-2">
                 <p className="text-white">{card.date}</p>
                 <p className="text-gray-200 font-thin">{card.location}</p>
-                <p className="text-lg lg:text-xl text-[rgb(222,165,164)]">
+                <p className="text-lg lg:text-xl text-red-600">
                   {card.town}
                 </p>
               </div>

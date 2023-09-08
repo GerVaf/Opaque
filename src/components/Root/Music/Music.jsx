@@ -110,7 +110,7 @@ const Music = () => {
     },
   ];
   return (
-    <div className=" lg:pr-20">
+    <div className=" ">
       <h1 className="lg:text-[100px] text-6xl font-extrabold text-white opacity-20">
         MUSIC
       </h1>

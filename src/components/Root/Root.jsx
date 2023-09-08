@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./Home/Home";
 import Tour from "./Tour/Tour";
 import Music from "./Music/Music";
+import Shop from "./Shop/Shop";
 
 const Root = () => {
   return (
@@ -14,6 +15,9 @@ const Root = () => {
       </div>
       <div id="music">
         <Music />
+      </div>
+      <div id="merch">
+        <Shop />
       </div>
     </div>
   );

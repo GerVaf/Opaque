@@ -25,11 +25,16 @@ const Nav = ({ setIsActive }) => {
       title: "MUSIC",
       section: "music",
     },
+    {
+      id: 4,
+      title: "MERCH",
+      section: "merch",
+    },
   ];
   const nav = useNavigate();
 
   return (
-    <div className="flex lg:gap-5 gap-2 text-[10px] lg:text-lg font-bold text-white cursor-pointer">
+    <div className="flex flex-wrap lg:gap-5 gap-2 text-[10px] lg:text-lg font-bold text-white cursor-pointer ">
       {loc.map((el) => (
         <div
           key={el.id}
@@ -54,7 +59,7 @@ const Nav = ({ setIsActive }) => {
             setIsActive(false);
           }
           setTimeout(() => {
-            scrollToSection('artists');
+            scrollToSection("artists");
           }, 100);
         }}
         className={`px-2 border-r-2  border-red-600 opacity-70 hover:opacity-100  duration-200 transition`}
