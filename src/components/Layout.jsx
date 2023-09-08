@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
       {/* parent */}
       <div className="w-[85%] my-10 mt-16 lg:my-20 bg-gradient-to-b from-zinc-700 to-gray-800 p-5 flex flex-col relative rounded-md">
         {/* mobile menu */}
-        <div className="lg:hidden block absolute left-0 top-[-18vh]">
+        <div className="lg:hidden block absolute left-0 top-[-15vh]">
           <Menu />
         </div>
         {/* nav */}
