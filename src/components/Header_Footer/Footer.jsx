@@ -17,7 +17,7 @@ const Footer = () => {
             key={index}
             src={imagePath}
             alt={`Colab Logo ${index}`}
-            className="h-20 object-cover rounded-md mx-16 "
+            className="lg:h-20 h-10 object-cover rounded-md mx-5 lg:mx-16 "
           />
         ))}
       </Marquee>
