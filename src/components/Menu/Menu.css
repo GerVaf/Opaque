@@ -1,0 +1,48 @@
+.box {
+  width: 30px;
+  height: 30px;
+  margin: 4.5em auto;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.btn, .btn:before, .btn:after {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgb(235,64,63);
+  transition: all 0.3s ease;
+}
+
+.btn {
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+}
+.btn:before, .btn:after {
+  content: "";
+  position: absolute;
+}
+.btn:before {
+  left: -10px;
+}
+.btn:after {
+  left: 12px;
+}
+
+.box.active .btn, .box.active .btn:before, .box.active .btn:after {
+  height: 20px;
+  border-radius: 3px;
+}
+.box.active .btn {
+  transform: translateY(-11px);
+  background: transparent;
+}
+.box.active .btn:before {
+  transform: translateX(12px) rotate(225deg);
+}
+.box.active .btn:after {
+  transform: translateX(-12px) rotate(-225deg);
+}
